@@ -1,12 +1,8 @@
-from merkle_example import example1
-import sys
-print(sys.path)
+from merkle_example.example1 import example1
 
-example1.example1()
 
-import merkle_example
+def test_that_we_can_execute_example_1_module_method():
+    print(__file__)
 
-merkle_example.default_example()
-merkle_example.example1.example1()
+    assert 0 == example1()
 
-import merkle_example.example2
