@@ -3,8 +3,6 @@ botocore==1.19.30
 click==7.1.2
 iniconfig==1.1.1
 jmespath==0.10.0
-# Editable Git install with no remote (merkle-example==1.0.0)
--e /Users/michel/Code/merkle-tree/src
 packaging==20.7
 pluggy==0.13.1
 py==1.9.0

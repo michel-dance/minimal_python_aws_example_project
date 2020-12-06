@@ -1,8 +1,14 @@
-print("loading example2")
 
-from . import example1
 
-example1.example1()
+def example_tree(a, b, c, d):
 
-if __name__ == "__main__":
-    print("example2 main")
+    hash_a = hash(a)
+    hash_b = hash(b)
+    hash_c = hash(c)
+    hash_d = hash(d)
+
+    hash_ab = hash(hash_a + hash_b)
+    hash_cd = hash(hash_c + hash_d)
+    hash_ab_cd = hash(hash_ab + hash_cd)
+
+    return hash_ab_cd
