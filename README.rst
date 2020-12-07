@@ -2,6 +2,7 @@
 
 python3 -m pip install pytest
 python3 -m pip freeze > requirements.txt
+
 python3 -m pytest
 
 python3 -m venv .
