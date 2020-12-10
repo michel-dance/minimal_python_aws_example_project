@@ -7,6 +7,7 @@ def test_that_we_can_execute_example_1_module_method():
 
     assert 0 == example1()
 
+
 def test_that_we_can_create_merkle_hash():
     merkle_hash = example_tree("first string", "second message", "third message", "fourth message")
 
