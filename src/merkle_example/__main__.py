@@ -12,7 +12,6 @@ def usage():
 
 
 def my_main():
-    print("executing main entry point for merkle_example")
 
     print(f"You have provided {len(sys.argv)} argument(s): ")
     print("")
