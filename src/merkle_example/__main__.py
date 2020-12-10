@@ -1,6 +1,7 @@
 import sys
 from .example2 import example_tree
 
+
 def usage():
     print("")
     print("\tUsage: merkle_example string1 string2 string3 string4")
