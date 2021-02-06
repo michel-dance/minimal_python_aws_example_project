@@ -2,7 +2,7 @@ attrs==20.3.0
 botocore==1.19.30
 click==7.1.2
 iniconfig==1.1.1
-jmespath==0.10.0p
+jmespath==0.10.0
 packaging==20.7
 pluggy==0.13.1
 py==1.9.0
