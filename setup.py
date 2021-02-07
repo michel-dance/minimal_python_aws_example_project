@@ -14,7 +14,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name="minimal_example_project",
+    name="minimal_aws_example_project",
     version="1.0.3",
     author='Michel Lacle',
     author_email='michel+pypi@f1kart.com',
