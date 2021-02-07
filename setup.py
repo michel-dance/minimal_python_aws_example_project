@@ -15,11 +15,11 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setuptools.setup(
     name="minimal_example_project",
-    version="1.0.2",
+    version="1.0.3",
     author='Michel Lacle',
     author_email='michel+pypi@f1kart.com',
     url='https://github.com/michel-lacle/minimal_example_project',
-    description="a minimalist project example",
+    description="a minimal Python project example with unit testing, command line interface, PyPi publishing capabilities",
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=setuptools.find_packages(where='src', exclude=['env', 'tests', 'infrastructure']),
