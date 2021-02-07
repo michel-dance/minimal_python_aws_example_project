@@ -1,4 +1,2 @@
-
-def default_example():
-    print("default_example()")
+print("initializing merkle_example module")
 
