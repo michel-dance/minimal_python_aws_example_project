@@ -1,14 +1,17 @@
-# python_project_template #
+# Minimal Example Project
 
-This repo provides a complete example for a PRO ptyhon
-package that you and your fellow developer will be proud of.
+This repo provides a complete example for a PRO Python
+project that you and your fellow developers will be proud of.
+
+**Source:** https://github.com/michel-lacle/minimal_example_project
 
 **It provides:**
  
-* a pip installable package.
-* a main entry point, so you can run as a pip module
-* a pytest based testing framework
+* a pip installable project.
+* module entry point examples, so you can run your modules from the command line.
+* a pytest based testing framework.
 * example commands for various workflows.
+* scripts to publish project to pypi repo.
 
 ## Developer Workflows ##
 
@@ -50,7 +53,7 @@ python3 -m pytest
 python3 -m pip install ./
 
 # uninstall the package
-python3 -m pip uninstall merkle_example
+python3 -m pip uninstall minimal_example_project
 
 # run the package main
 python3 -m merkle_example

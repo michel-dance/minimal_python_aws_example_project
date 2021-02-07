@@ -14,12 +14,15 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setuptools.setup(
-    name="miminal_example_project",
-    version="1.0.0",
-    description="a minimalist python project template",
+    name="minimal_example_project",
+    version="1.0.2",
+    author='Michel Lacle',
+    author_email='michel+pypi@f1kart.com',
+    url='https://github.com/michel-lacle/minimal_example_project',
+    description="a minimalist project example",
     long_description=long_description,
     long_description_content_type='text/markdown',
-    packages=setuptools.find_packages(where='src', exclude=['python', 'tests', 'infrastructure']),
+    packages=setuptools.find_packages(where='src', exclude=['env', 'tests', 'infrastructure']),
     include_package_data=True,
     install_requires=install_reqs,
     package_dir={'': 'src'},
