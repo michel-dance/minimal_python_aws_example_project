@@ -2,3 +2,5 @@ env
 **/*egg-info
 .idea/*
 **/__pycache**
+build/**
+dist/**

@@ -11,7 +11,7 @@ dep_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' in x]
 
 setuptools.setup(
     name="python_project_template",
-    version="1.0.31337",
+    version="1.0.0",
     description="provides the capability to generate features",
     packages=setuptools.find_packages(where='src', exclude=['python', 'tests', 'infrastructure']),
     include_package_data=True,
