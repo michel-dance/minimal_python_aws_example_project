@@ -30,9 +30,9 @@ def main():
             args.calculate_merkle_hash[1],
             args.calculate_merkle_hash[2],
             args.calculate_merkle_hash[3]))
-    if args.print_s3_buckets:
+    elif args.print_s3_buckets:
         print_s3_buckets()
-    if args.submit_batch_job:
+    elif args.submit_batch_job:
         submit_batch_job()
     else:
         parser.print_help()

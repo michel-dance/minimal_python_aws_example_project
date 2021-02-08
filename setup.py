@@ -15,9 +15,8 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setuptools.setup(
     name="minimal_aws_example_project",
-    version="1.0.10",
+    version="1.0.12",
     author='Michel Lacle',
-    author_email='michel+pypi@f1kart.com',
     url='https://github.com/michel-lacle/minimal_aws_example_project',
     description="a minimal Python project example with unit testing, command line interface, PyPi publishing capabilities",
     long_description=long_description,

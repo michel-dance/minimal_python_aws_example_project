@@ -32,6 +32,8 @@ def submit_batch_job():
         jobDefinition='example-s3',
         containerOverrides={
             'command': [
-                'string',
+                '--calculate-merkle-hash', 'ferrari', 'mercedes', 'haas', 'renault'
             ]
         })
+
+    print(response)
