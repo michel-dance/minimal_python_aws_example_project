@@ -3,7 +3,7 @@ from .example2 import example_tree
 
 def usage():
     print("")
-    print("\tUsage: merkle_example string1 string2 string3 string4")
+    print("\tUsage: example string1 string2 string3 string4")
     print("")
     print("\tstring(1-4): 4 strings that you want to create a merkle tree hash root")
     print("\tDescription: create a merkle tree root hash")
