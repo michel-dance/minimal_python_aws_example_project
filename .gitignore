@@ -4,3 +4,4 @@ env
 **/__pycache**
 build/**
 dist/**
+python

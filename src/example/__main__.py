@@ -1,6 +1,8 @@
 import sys
 from .example2 import example_tree
 from .example1 import print_s3_buckets
+import argparse
+
 
 def usage():
     print("")
@@ -13,6 +15,15 @@ def usage():
 
 def my_main():
 
+    parser = argparse.ArgumentParser(description='Example AWS Python project with many benefits.')
+
+    parser.add_argument(
+        '--calculate-merkle-hash',
+        nargs = 4,
+        metavar=('string1', 'string2', 'string3', 'string4'),
+        help='compute the merkle hash of input strings')
+    args = parser.parse_args()
+
     print(f"You have provided {len(sys.argv)} argument(s): ")
     print("")
 
@@ -21,13 +32,16 @@ def my_main():
 
     print_s3_buckets()
 
-    if len(sys.argv) < 5:
-        usage()
-        exit(-1)
-    else:
+    if args.calculate_merkle_hash:
         print("Your merkle root hash is:")
-        print(example_tree(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]))
-        exit(0)
+        print(example_tree(
+            args.calculate_merkle_hash[0],
+            args.calculate_merkle_hash[1],
+            args.calculate_merkle_hash[2],
+            args.calculate_merkle_hash[3]))
+    else:
+        parser.print_help()
+        exit(-1)
 
 
 if __name__ == "__main__":
