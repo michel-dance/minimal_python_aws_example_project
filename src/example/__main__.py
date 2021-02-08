@@ -1,5 +1,6 @@
 import sys
 from .example2 import example_tree
+from .example1 import print_s3_buckets
 
 def usage():
     print("")
@@ -14,8 +15,11 @@ def my_main():
 
     print(f"You have provided {len(sys.argv)} argument(s): ")
     print("")
+
     for i, arg in enumerate(sys.argv):
         print(f"Argument {i:>6}: {arg}")
+
+    print_s3_buckets()
 
     if len(sys.argv) < 5:
         usage()

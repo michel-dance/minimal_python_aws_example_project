@@ -13,6 +13,7 @@ aws ecr get-login-password | docker login --username AWS --password-stdin ${AWS_
 
 echo "Building the Docker image..."
 export PIP_INDEX_URL=`python3 -m pip config get global.index-url`
+echo ${PIP_INDEX_URL}
 
 docker build --build-arg pip_index_url="${PIP_INDEX_URL}" -t ${IMAGE_REPO_NAME}:${IMAGE_TAG} .
 docker tag $IMAGE_REPO_NAME:${IMAGE_TAG} ${AWS_ACCOUNT}.dkr.ecr.us-east-1.amazonaws.com/${IMAGE_REPO_NAME}:${IMAGE_TAG}
