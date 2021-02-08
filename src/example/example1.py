@@ -23,3 +23,15 @@ def print_s3_buckets():
 
 def submit_batch_job():
     print("submit_batch_job")
+
+    client = boto3.client('batch')
+
+    response = client.submit_job(
+        jobName='example-cli-job',
+        jobQueue='example-fars',
+        jobDefinition='example-s3',
+        containerOverrides={
+            'command': [
+                'string',
+            ]
+        })
