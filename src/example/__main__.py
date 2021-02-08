@@ -4,15 +4,6 @@ from .example1 import print_s3_buckets
 import argparse
 
 
-def usage():
-    print("")
-    print("\tUsage: example string1 string2 string3 string4")
-    print("")
-    print("\tstring(1-4): 4 strings that you want to create a merkle tree hash root")
-    print("\tDescription: create a merkle tree root hash")
-    print("")
-
-
 def my_main():
 
     parser = argparse.ArgumentParser(description='Example AWS Python project with many benefits.')
@@ -22,15 +13,12 @@ def my_main():
         nargs = 4,
         metavar=('string1', 'string2', 'string3', 'string4'),
         help='compute the merkle hash of input strings')
+    parser.add_argument(
+        '--print-s3-buckets',
+        action='store_true',
+        help='show the s3 buckets in this account'
+    )
     args = parser.parse_args()
-
-    print(f"You have provided {len(sys.argv)} argument(s): ")
-    print("")
-
-    for i, arg in enumerate(sys.argv):
-        print(f"Argument {i:>6}: {arg}")
-
-    print_s3_buckets()
 
     if args.calculate_merkle_hash:
         print("Your merkle root hash is:")
@@ -39,6 +27,8 @@ def my_main():
             args.calculate_merkle_hash[1],
             args.calculate_merkle_hash[2],
             args.calculate_merkle_hash[3]))
+    if args.print_s3_buckets:
+        print_s3_buckets()
     else:
         parser.print_help()
         exit(-1)
