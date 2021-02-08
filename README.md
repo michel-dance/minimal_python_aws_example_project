@@ -9,6 +9,7 @@ project that you and your fellow developers will be proud of.
 * module entry point examples, so you can run your modules from the command line.
 * a pytest based testing framework.
 * example commands for various workflows.
+* A Dockerfile to allow module execution from Docker.
 * scripts to publish project to AWS CodeArtifact PyPi repo & AWS ECR Docker Registry.
 
 ## Developer Workflows ##
@@ -55,9 +56,9 @@ python3 -m pip uninstall minimal_example_project
 
 # run the package main
 python3 -m example
+
+# run the example package from docker
+docker run --rm example:latest
 ````
-
-
-
 
 
