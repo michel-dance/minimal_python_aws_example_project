@@ -1,0 +1,1 @@
+print("initialize example module")
