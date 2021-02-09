@@ -5,3 +5,7 @@ env
 build/**
 dist/**
 python
+**/.terraform/**
+*.tfstate*
+.terraform.*
+**/*.tfvars

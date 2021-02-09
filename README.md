@@ -1,4 +1,4 @@
-# Minimal Example Project
+# Minimal AWS Example Python Project
 
 This repo provides a complete example for a PRO Python
 project that you and your fellow developers will be proud of.
